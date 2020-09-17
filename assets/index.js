@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (!this.container) return;
 
-                    console.log('show');
                     this.container.classList.add('tooltip');
                     this.container.style.top = top;
                     this.container.style.left = left;
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.body.appendChild(this.container);
                 },
                 hide() {
-                    console.log('hide');
                     document.body.removeChild(this.container);
                 }
             };
